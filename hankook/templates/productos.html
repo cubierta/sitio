@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Luis Albarenga | Productos </title>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+	<link rel="stylesheet" href="{{STATIC_URL}}css/normalize.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/main.css">	
+	<link rel="stylesheet" href="{{STATIC_URL}}jquery.idealforms.min.css">
+	<script type="text/javascript" src="{{STATIC_URL}}jquery.idealforms.min.js"></script>
+	<script type="text/javascript" src="{{STATIC_URL}}js/swipe.js"></script>
+	<script type="text/javascript" src="{{STATIC_URL}}js/prefixfree.min.js"></script>
+	<link href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" rel="stylesheet"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="{{STATIC_URL}}js/responsiveslides.min.js"></script>
+	<script src="{{STATIC_URL}}js/modernizr.js"></script>
+	<script src="{{STATIC_URL}}js/codiguito.js"></script>
+</head>
+<body>
+	<header>
+		<hgroup>
+		<h1>Hankook Tires</h1>
+		<h2>Luis Albarenga</h2>
+		</hgroup>
+		
+		+54 (11) 5259-3970
+		
+	</header>
+	<nav>
+		<ul>
+		<li><a href="/">Inicio</a></li>
+		<li><a href="#" id="productos">Productos</a></li>
+		<li><a href="resultados.html">resultados</a></li>
+		<a href="resultados.html" id="loco"></a>
+		</ul>
+	</nav>
+	<section>
+		<div class="part1">
+								
+		<div class="inside">
+		{% for n in neumaticos %}
+		<div class="product">
+			
+			<h2>Neumatico</h2> : <h3>{{n.nombre}} </h3>
+			<img src="http://www.vividracing.com/catalog/wm.php/images/hankook_optimo724.jpg" alt="">
+			<div class="decripcion">
+				<h4>Medidas</h4><br>
+			<b>Ancho:</b><p> {{n.medidas.ancho}} <br></p>
+			<b>Altura:</b><p> {{n.medidas.altura}} </p><br>
+			<b>Aro:</b><p> {{n.medidas.aro}} </p>
+			</div>
+		</div>
+		{% endfor %}
+				<div class="product">
+			
+			<h2>Neumatico</h2> : <h3>H23</h3>
+			<img src="http://www.vividracing.com/catalog/wm.php/images/hankook_optimo724.jpg" alt="">
+			<div class="decripcion">
+				<h4>Medidas</h4><br>
+			<b>Ancho:</b><p>165<br></p>
+			<b>Altura:</b><p>75</p><br>
+			<b>Aro:</b><p>17</p>
+			</div>
+		</div>
+		<div class="product">
+			
+			<h2>Neumatico</h2> : <h3>H23</h3>
+			<img src="http://www.vividracing.com/catalog/wm.php/images/hankook_optimo724.jpg" alt="">
+			<div class="decripcion">
+				<h4>Medidas</h4><br>
+			<b>Ancho:</b><p>165<br></p>
+			<b>Altura:</b><p>75</p><br>
+			<b>Aro:</b><p>17</p>
+			</div>
+		</div>
+		<div class="product">
+			
+			<h2>Neumatico</h2> : <h3>H23</h3>
+			<img src="http://www.vividracing.com/catalog/wm.php/images/hankook_optimo724.jpg" alt="">
+			<div class="decripcion">
+				<h4>Medidas</h4><br>
+			<b>Ancho:</b><p>165<br></p>
+			<b>Altura:</b><p>75</p><br>
+			<b>Aro:</b><p>17</p>
+			</div>
+		</div>
+		<div class="product">
+			
+			<h2>Neumatico</h2> : <h3>H23</h3>
+			<img src="http://www.vividracing.com/catalog/wm.php/images/hankook_optimo724.jpg" alt="">
+			<div class="decripcion">
+				<h4>Medidas</h4><br>
+			<b>Ancho:</b><p>165<br></p>
+			<b>Altura:</b><p>75</p><br>
+			<b>Aro:</b><p>17</p>
+			</div>
+		</div>
+		</div>
+			
+	
+		</div>
+		<div class="part2">
+			<div id="element_list">
+				
+			</div>
+			<article class="hankook">
+				<h2>Hankook</h2>
+				<p>Hankook Tire es un conjunto industrial de Corea del Sur que consiste en la agrupación de varios negocios, incluyendo la aviación, finanzas, construcción, transporte, medicamentos, y fabricación de neumáticos, con sede principal en Seúl, Corea. Fue conocida anteriormente como Chosun Tire.
+
+Hankook Tire Company, que es una empresa del grupo, tiene sus oficinas principales en Seúl, Corea del Sur, y tiene varias fábricas en los alrededores. Corea del Sur (tres fábricas), donde la producción es exportada a todo el mundo.
+
+La compañía tiene sedes secundarias en los Estados Unidos y en el Reino Unido, donde dirigen el mercado americano y europeo, respectivamente. Actualmente la compañía vende neumáticos bajo la marca de Hankook Tire y Marshal con una gran variedad de tamaños.</p>
+			</article>
+		</div>
+		<div class="part3">
+			<h2>Buscador</h2>
+			
+		</div>
+	</section>
+	<footer>
+		<p>Luis Albarenga 2012 &copy;</p>
+	</footer>
+	<script>
+  $(function() {
+    $(".rslides").responsiveSlides({
+    	  	auto: true,           
+  			speed: 1000,          
+  			pager: true,  
+    });
+  });
+</script>
+</body>
+</html>

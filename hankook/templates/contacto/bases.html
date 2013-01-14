@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<!--[if IE 8]> <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<title>{% block titulo %}{% endblock %} | Hankook - Luis </title>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+	<link rel="stylesheet" href="{{STATIC_URL}}css/normalize.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/main.css">	
+	<link rel="stylesheet" href="{{STATIC_URL}}jquery.idealforms.min.css">
+	<script type="text/javascript" src="{{STATIC_URL}}jquery.idealforms.min.js"></script>
+	<script type="text/javascript" src="{{STATIC_URL}}js/swipe.js"></script>
+	<script type="text/javascript" src="{{STATIC_URL}}js/prefixfree.min.js"></script>
+	<link href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" rel="stylesheet"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="{{STATIC_URL}}js/responsiveslides.min.js"></script>
+	<script src="{{STATIC_URL}}js/modernizr.js"></script>
+</head>
+<body>
+	<body>
+	<header>
+		<hgroup>
+		<h1>Hankook Tires</h1>
+		<h2>Luis Albarenga</h2>
+		</hgroup>
+	</header>
+	<nav>
+		<ul>
+		<li><a href="">Inicio</a></li>
+		<li><a href="">Productos</a></li>
+		<li><a href="">Contacto</a></li>
+		</ul>
+	</nav>
+	<section>
+		<div id='title'><h2> {% block titles %}{% endblock %} </h2></div>
+		<div class="part1">
+			<div class="contact">
+			{% block contac %}
+			{% endblock %}
+			</div>
+		</div>
+		<div class="part3">
+			<h2>Buscador</h2>
+			
+		</div>
+	</section>
+	<footer>
+		<p>Luis Albarenga 2012 &copy;</p>
+	</footer>
+	<script>
+  $(function() {
+    $(".rslides").responsiveSlides({
+    	  	auto: true,           
+  			speed: 1000,          
+  			pager: true,  
+    });
+  });
+</script>
+	<script type="text/javascript">
+	var $myform = $('#formulario').idealforms().data('idealforms');
+	</script>
+	
+</body>
+</html>

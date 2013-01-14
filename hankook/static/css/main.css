@@ -1,0 +1,308 @@
+s*{
+    transition: all 0.5s ease;
+    -webkit- transition: all 0.5s ease;
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, del, dfn, em, img, ins, kbd, q, samp, small, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, nav, section {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+/*  font-size:100%; esto hace mas chico el tamaño de fuente usar solo en moviles por que se ve mas cool*/
+  vertical-align:baseline;
+  background:transparent;
+}
+body * {
+box-sizing: border-box;
+}
+body{
+      -webkit-text-size-adjust:none;
+  font-family:sans-serif;
+    font-family: Arial;
+    font-size: 16px;
+    color: #EEE;
+    background: #222;
+    text-align: center;
+}
+h2 {
+    text-shadow: rgba(0,0,0,0.3) 1px 1px 2px;
+}
+header {
+    background: red;
+    width: 100%;
+    margin: 0;
+    padding: 0.1em 0;
+}
+header h1 {
+    margin: 0 0 0.5em 0;
+    text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 2px;
+}
+header h2 {
+    margin: 0;
+    text-shadow: rgba(0,0,0,0.2) 1px 1px 2px;
+    font-weight: normal;
+}
+
+nav {
+    background: #e2e2e2;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin:0; 
+}
+nav ul li {
+    display: inline-block;
+    padding: 1em;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #969696;
+}
+section {
+    width: 100%;
+
+}
+footer{
+  line-height: 1.4em;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/*
+.bio {
+    width: 40%;
+    margin: 1em 2% 1em 1em;
+    background: blue;
+    padding: 1em;
+    text-align: left;
+    border-radius: 4px;
+} */
+.bio {
+    position: relative;
+    background: blue;
+    border-radius: 0.2em;
+    margin: 1em 2% 6em 1em;
+    padding: 1em;
+    text-align: justify;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-shadow: rgba(0,0,0,0.75) 2px 2px 5px;
+    transition: all 0.5s ease;
+    width: 40%;}
+.bio h2 {
+    text-align: center;
+}
+
+.bio img{
+      box-shadow: 0 0 10px black;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    left: 24%;
+    right: 50%;
+    top: 50%;
+    vertical-align:middle;
+    text-align:center;
+}
+.hankook {
+    padding: 1em;
+    text-align: justify;
+       -moz-column-width: 15em;
+   -moz-column-gap: 15px;
+   -webkit-column-width: 15em;
+   -webkit-column-gap: 15px;
+   -webkit-column-rule: 1px solid #ccc;
+   -moz-column-rule: 1px solid #ccc;
+}
+.part1{
+    overflow: hidden;
+    position: relative;
+    background: #2D2D2D;
+    margin: 0;
+    padding: 1em 0;
+}
+.part2 {
+    background:#A3A3A3;
+      margin: 0;
+    padding: 1em 0;
+}
+.part3 {
+    background: #E1E1E1;
+      margin: 0;
+    padding: 1em 0;
+}
+.part3 hr{
+  width: 40%;
+  margin: auto; 
+
+}
+.dentro3{
+  width: 45%;
+  margin: auto;
+  border: 1px solid #fff2ff;
+  border-radius: 5px;
+  box-shadow: 0 0 15px black;
+  line-height: 3em;
+}
+
+/*  Estilos del Slider  */
+.bio , .slider{
+    display: inline-block;
+    vertical-align: top;
+}
+.slider{
+    position: relative;
+    width: 50%;
+    margin: 1em ;
+    box-shadow: 0 0 20px black;
+}
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+.rslides_tabs {
+  background: rgba(0,0,0,.25);
+  box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
+  -moz-box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
+  font-size: 18px;
+  list-style: none;
+  margin: 0 auto 50px;
+  max-width: 540px;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.rslides_tabs li {
+  display: inline;
+  float: none;
+  margin-right: 1px;
+}
+
+.rslides_tabs a {
+  width: auto;
+  text-decoration: none;
+  color: white;
+  line-height: 20px;
+  padding: 9px 20px;
+  height: auto;
+  background: transparent;
+  display: inline;
+}
+
+.rslides_tabs a:hover {
+  border: 0;
+}
+
+.rslides_tabs li:first-child {
+  margin-left: 0;
+}
+
+.rslides_tabs .rslides_here a {
+  background: rgba(255,255,255,.1);
+  color: #fff;
+  font-weight: bold;
+}
+
+#enviar {
+  border: 1px solid #777777;
+  background: rgba(0,100,150,1);
+  color: white;
+  font: bold 11px 'Trebuchet MS';
+  padding: 4px;
+  cursor: pointer;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+
+
+}
+
+
+.inside{
+  display: block;
+  border-radius: 4px;
+  width: 70%;
+  background: red;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  bottom: 0;
+
+}
+
+.product{
+
+  border: 1px solid gray;
+  box-shadow: 0 0 9px rgba(255,255,255,0.9);
+  display: inline-block;
+  margin: 0.5em;
+  padding: 1em;
+  color: black;
+  width: 40%;
+  background: white;
+  
+}
+.product img{
+  width:50%;
+  border-radius: 50%;
+}
+.product h2 {
+  display: inline-block;
+}
+.product table, tbody, thead, th, tr{
+  border: 1px solid red;
+  margin: 2em;
+  padding: 2em;
+}
+.decripcion{
+  margin: 0;
+}
+.decripcion h4, b, p{
+ display: inline;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+/* Buscador */
+
+
+  /* Responsive Desing It is Cool °Laycho° */
+  @media screen and (max-width: 500px){
+    .bio , .slider{
+        width: 100%;
+        margin: 1em auto;
+        padding: auto;
+    }
+
+  }
